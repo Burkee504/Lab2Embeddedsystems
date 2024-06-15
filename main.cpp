@@ -10,9 +10,18 @@ int max_terms =10;
 
 int main()
 {
-    printf("Finbonachi series: %d,%d,\r\n", t_1, t_2);
-    for(int i=0; i<5 ; i++) {
-        printf("loop %d \r\n", i);
+    printf("Finbonachi series: %d,%d,", t_1, t_2);
+    for(int i=2; i<max_terms; i++) {
+        next_term = t_1 + t_2;
+        printf("%d, ", next_term);
+        t_1 = t_2;
+        t_2 = next_term; 
+
+    }
+    printf("\r\n");
+    printf("onetwothreeaa");
+
+    while (true) {
 
     }
 }
