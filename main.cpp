@@ -33,6 +33,12 @@ int main()
     }
     printf("\r\n");
 
+    printf("Finbonachi series recursive:");
+    for(int i=0; i<max_terms; i++){
+        printf("%d, ", fib(i));
+    }
+    printf("\r\n");
+
     while (true) {
 
     }
