@@ -1,6 +1,6 @@
 #include "mbed.h"
 /*Embedded Lab2 */
-// main() runs in its own thread in the OS
+// This program uses printf and loops to print numbers in fibonacci sequence. 
 
 int t_1 = 0;
 int t_2 = 1;
@@ -30,12 +30,6 @@ int main()
         t_1 = t_2;
         t_2 = next_term; 
 
-    }
-    printf("\r\n");
-
-    printf("Finbonachi series recursive:");
-    for(int i=0; i<max_terms; i++){
-        printf("%d, ", fib(i));
     }
     printf("\r\n");
 
